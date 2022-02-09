@@ -40,7 +40,7 @@ return [
     'seeder' => [
         'type' => 'array',
         'data' => array([
-            'first_name' => 'Donald',
+            'first_name' => 'Tonald',
             'last_name'  => 'Duck',
             'email'      => 'donald@codegorilla.nl',
             'password'   => password_hash('Gorilla1!', PASSWORD_DEFAULT),
@@ -76,6 +76,22 @@ return [
             'birthday'   => '1996-03-19',
             'created_at' => date('Y-m-d H:i:s'),
             'created_by' => 1,
-        ]),
+        ],
+    
+        [
+            'first_name' => 'Sir',
+            'last_name'  => 'John',
+            'email'      => 'sirjohn@codegorilla.nl',
+            'password'   => password_hash('Gorilla1!', PASSWORD_DEFAULT),
+            'role'       => 2,
+            'country'    => 156,
+            'city'       => 'Groningen',
+            'birthday'   => '1996-03-19',
+            'created_at' => date('Y-m-d H:i:s'),
+            'created_by' => 1,
+        ],
+
+    
+    ),
     ],
 ];

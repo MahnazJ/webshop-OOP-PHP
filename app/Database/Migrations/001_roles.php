@@ -21,19 +21,19 @@ return [
         'type' => 'array',
         'data' => array(
             [
-                'name'       => 'super-admin',
+                'name'       => 'super-admin',               
                 'created_at' => date('Y-m-d H:i:s'),
                 'created_by' => 1
             ],
 
             [
-                'name'       => 'admin',
+                'name'       => 'admin',              
                 'created_at' => date('Y-m-d H:i:s'),
                 'created_by' => 1
             ],
 
             [
-                'name'       => 'user',
+                'name'       => 'user',        
                 'created_at' => date('Y-m-d H:i:s'),
                 'created_by' => 1
             ]

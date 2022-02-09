@@ -1,7 +1,7 @@
 let app = new Vue({
     el: '#app',
     data: {
-        appName: 'The Fruity Bowl',
+        appName: 'ToyShop',
     },
 
     mounted() {

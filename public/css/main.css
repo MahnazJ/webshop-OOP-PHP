@@ -5,13 +5,6 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-.header {
-    height: 200px;
-    background-color: #9eafb7;
-    width: 100%;
-    color: white;
-}
-
 .content {
     position: relative;
     min-height: 100vh;
@@ -21,12 +14,6 @@ body {
     padding-bottom: 2.5rem;
 }
 
-.footer {
-    height: 200px;
-    background-color: black;
-    width: 100%;
-    color: white;
-}
 
 .cart-icon {
     cursor: pointer;

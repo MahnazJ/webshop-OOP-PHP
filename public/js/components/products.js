@@ -36,16 +36,18 @@ Vue.component('products', {
 
     template: `
         <div class="row">
-            <div class="col-md-4 pt-3" v-for="product in products">
+            <div class="col-md-3 pt-3 p-2 product-col" v-for="product in products">
                 <div class="card">
                     <img :src="'/public/images/webshop/' + product.image" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ product.name }}</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <p>Stock: {{ product.stock }}</p>
-                        <input type="button" class="btn btn-primary" :disabled="product.stock === 0" @click="addToCart(product)" value="Order">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-style">{{ product.name }}</h5>
+                        <p  class="text-style>"Stock: {{ product.stock }}</p>
+                        <p class="price text-style"> &euro; {{ product.price }}</p>
+                        <input type="button" class="btn buttonstyle" :disabled="product.stock === 0" @click="addToCart(product)" value="Add to cart">
                     </div>
                 </div>
             </div>
         </div>`,
 })
+
+
