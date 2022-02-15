@@ -13,5 +13,6 @@
 - go to your project folder in the terminal
 - type: php migrate.php -f -s (-f rewrites all tables, -s seeds the tables)
 
+# php-oop
 
 
