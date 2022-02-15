@@ -1,5 +1,7 @@
+<?php require 'views/partials/header.view.php';?>
 
-    <div class="container">
-     <h1>SALE PRODUCTS</h1>
-    
-    </div>
+<h1>SALE</h1>
+
+
+</div>
+<?php require 'views/partials/footer.view.php' ;?>

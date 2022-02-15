@@ -1,5 +1,7 @@
 <?php
 
+
+
 namespace App\Controllers;
 
 use App\Libraries\MySql;
@@ -8,13 +10,14 @@ use App\Libraries\View;
 use Exception;
 use PDO;
 use App\Models\ProductModel;
+use App\Models\ProductSaleModel;
 
-class HomeController
+class ProductSaleController extends Controller
 {
 
     public function index()
     {
-        return View::render('site/home.view');
+        return View::render('site/productsale.view');
     }
 
     public function products()
@@ -24,13 +27,13 @@ class HomeController
         }
 
         try {
-            $product = new ProductModel;
-            $products = $product->all();
+            $productsale = new ProductSaleModel;
+            $productsale = $productsale->all();
 
             $success = true;
             $message = "Success";
         } catch (Exception $e) {
-            $products = null;
+            $productsale = null;
             $success = false;
             $message = $e->getMessage();
         }

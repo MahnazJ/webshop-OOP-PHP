@@ -21,3 +21,9 @@ input,button {
 .disabledButton {
     background-color: rgb(175, 175, 175);
 }
+
+
+::placeholder {
+    color: blue;
+    opacity: 1;
+}

@@ -11,8 +11,9 @@ require 'core/core.php';
 // This function is in core/core.php file
 set_exception_handler('exception_handler');
 
-use App\Libraries\Router;
+
 use App\Libraries\Request;
+use App\Libraries\Router;
 
 require 'core/bootstrap.php';
 
@@ -26,12 +27,13 @@ $function = $route['function'];
 if (!Request::ajax()) {
     // Load the HTML header
     require 'views/layouts/head.view.php';
-
+   
     // Inject code from controller
     echo $class->$function();
 
     // Close it with the bottom end </body> and </html> tags
     require 'views/layouts/bottom.view.php';
+
 } else {
     echo $class->$function();
 }

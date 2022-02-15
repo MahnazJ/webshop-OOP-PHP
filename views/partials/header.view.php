@@ -4,7 +4,7 @@
                         <header class="text-center">
             
                             <h1>
-                                <p class="header-text">ToyShop</p>
+                            <p class="header-text"><a id="headerlink" href="/home">ToyShop</a></p>
                             </h1>
             
                          </header>
@@ -14,7 +14,7 @@
                         <div class="row">
                             <nav class="navbar navbar-expand-lg navbar-light bg-light">
             
-                                    <a class="navbar-brand" href="?page=home">
+                                    <a class="navbar-brand" href="/home">
                                     <img src="/public/images/webshop/logo_small_icon_only.png" alt="" width="100" height="100">
                                     </a>
                                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -27,17 +27,31 @@
                                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
                                             <li class=" nav-item">
-                                                <a class="nav-link active nav-button" aria-current="page" href="?page=home">Home</a>
+                                                <a class="nav-link active nav-button" aria-current="page" href="/home">Home</a>
                                             </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link nav-button" href="?page=shop">Shop</a>
+
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link nav-button dropdown-toggle" href="#" id="navbarDropdown"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Shop
+                                                </a>
+                                               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li>
+                                                    <a class="dropdown-item button-style text-style" href="/home/products">Products</a></li>
+                                                <li>
+                                                    <a class="dropdown-item button-style text-style" href="/home/productsale">Sale</a></li>
+                                                <li>
+                                   
+                                                </li>
+                                      
+                                               </ul>
                                             </li>
             
                                             <li class="nav-item">
-                                                <a class="nav-link nav-button" href="?page=contact">Contact</a>
+                                                <a class="nav-link nav-button" href="/contact">Contact</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link nav-button" href="?page=aboutus">About Us</a>
+                                                <a class="nav-link nav-button" href="/aboutus">About Us</a>
                                             </li>
             
             
@@ -46,26 +60,25 @@
                                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 Account
                                                 </a>
-                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                 <li>
-                                                    <a class="dropdown-item button-style text-style" href="?page=register">Register</a></li>
+                                                    <a class="dropdown-item button-style text-style" href="/register">Register</a></li>
                                                 <li>
-                                                    <a class="dropdown-item button-style text-style" href="?page=login">Login</a></li>
+                                                    <a class="dropdown-item button-style text-style" href="/login">Login</a></li>
                                                 <li>
                                    
                                                 </li>
                                       
-                                            </ul>
-                                        </li>
+                                               </ul>
+                                            </li>
 
                                             
-                                        <li class="nav-item">                                  
-                                             <?= fullNameFromSession() ?>
-                                             <shopping-cart ref="shoppingCart"></shopping-cart>
-                                       
-                                        </li>
+                                        <li class="nav-item">       
+                                        <shopping-cart ref="shoppingCart"></shopping-cart>                        
+                                                                                                                             
+                                        </li>                   
                                         </ul>
-                             
+                                        <span class="mt-4 m-1 text-style"><?= "Welcome, " .fullNameFromSession() ?></span>
     
                                     <form class="d-flex">
                                         <input class="form-control me-1 text-style" type="search" placeholder="Search" aria-label="Search">
@@ -80,3 +93,7 @@
             </div>
 
        
+
+
+
+            

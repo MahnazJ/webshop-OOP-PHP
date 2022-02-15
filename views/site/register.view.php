@@ -1,49 +1,55 @@
+<?php require 'views/partials/header.view.php'?>
 <div class="login-overlay">
-    <div class="center-box register-form">
-        <div class="mb-3">
-            <span class="guitar-icon">
-                <img src="/public/images/codegorilla-logo.png">
-                <div>
-                    <h3>Register</h3>
-                </div>
-            </span>
+    
+        
+            <div class="container mb-6 register-container">
+            <h1 class="text-center mt-3 mb-2 buttonstyle">Register</h1>
+
+            <form class="register-form" method="<?= $method ?>" onsubmit="return false;" name="frmRegister">
+            
+            <div class="form-group mb-2">
+                <label for="first_name" class="form-label register-form text-style">First Name
+                <input type="text" name="first_name" class="form-control" id="first_name" maxlength="80" placeholder="first name" required> </label>
+            </div>
+
+            <div class="form-group">
+                <label for="last_name" class="form-label register-form text-style"> Last Name
+                <input type="text" name="last_name" class="form-control" id="last_name" maxlength="80" placeholder="last name" required></label>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label register-form text-style">Email
+                <input type="email" name="email" class="form-control" id="email" maxlength="255" placeholder="email" required></label>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="register-form text-style">Password
+                <input type="password" name="password" class="form-control" id="password" maxlength="50" placeholder="password" required></label>
+            </div>
+
+            <div>       
+            <label for="password_2" class="register-form text-style">Repeat Password
+                <input type="password" class="form-control" name="password_2" id="password_2" maxlength="50" placeholder="repeat password"required></label>
+            </div>
+
+                <input type="hidden" name="f_token" value="<?= createToken() ?>">
+
+                <input type="submit" class="btn text-style" value="Submit">
+                <input type="button" class="btn text-style" id="register-cancel" value="Cancel">
+
+            
+            <div>         
+                <p class="register-form text-style"> Already have an account?
+                    <a href="/login"> Login instead </a>
+                </p>       
+            </div>
+
+
+            </form>
         </div>
 
-        <div class="alert alert-danger" id="register-message" role="alert"></div>
-
-        <form method="<?= $method ?>" onsubmit="return false;" name="frmRegister" class="row g-3">
-            <div class="col-md-6">
-                <label for="first_name" class="form-label">First name</label>
-                <input type="text" class="form-control" name="first_name" id="first_name" maxlength="80" required>
-            </div>
-            <div class="col-md-6 mb-3">
-                <label for="last_name" class="form-label">Last name</label>
-                <input type="text" class="form-control" name="last_name" id="last_name" maxlength="80" required>
-            </div>
-            
-            <div class="col-md-12 mb-3">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" name="email" id="email" maxlength="255" required>
-            </div>
-
-            <div class="col-md-6">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" name="password" id="password" maxlength="50" required>
-            </div>
-
-            <div class="col-md-6 mb-3">
-                <label for="password_2">Repeat password</label>
-                <input type="password" class="form-control" name="password_2" id="password_2" maxlength="50" required>
-            </div>
-
-            <input type="hidden" name="f_token" value="<?= createToken() ?>">
-
-            <div class="col-md-12 mb-3">
-                <input type="submit" class="btn btn-dark" value="Submit">
-                <input type="button" class="btn btn-dark" id="register-cancel" value="Cancel">
-            </div>
-        </form>
-    </div>
 </div>
-
 <script src="public/js/partials/register.js"></script>
+
+<?php require 'views/partials/footer.view.php' ?>
+

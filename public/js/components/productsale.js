@@ -1,4 +1,4 @@
-Vue.component('products', {
+Vue.component('productsale', {
     data: function () {
         return {
             products: [],
@@ -10,7 +10,7 @@ Vue.component('products', {
     },
 
     methods: {
-        addToCart(product) {
+        addToCart(sale) {
             product.stock--;
 
             this.$root.$emit('add-to-cart', product);
@@ -36,7 +36,7 @@ Vue.component('products', {
 
     template: `
         <div class="row">
-            <div class="col-md-3 pt-3 p-2 product-col" v-for="product in products">
+            <div class="col-md-3 pt-3 p-2 product-col" v-for="product in productsale">
                 <div class="card">
                     <img :src="'/public/images/webshop/' + product.image" class="card-img-top" alt="...">
                     <div class="card-body text-center">

@@ -16,7 +16,7 @@ use App\Libraries\View;
 class WhenLoggedIn
 {
 
-    protected $redirectTo = 'admin';
+    protected $redirectTo = 'user';
 
     /**
      * Check if a user is logged in by checking the session

@@ -9,9 +9,15 @@
     right: 0;
     float: right;
     display: none;
-    color: #000;
+    color: rgb(39, 29, 29);
 }
+
 
 .basket {
     cursor: pointer;
+}
+
+.bi-basket3 {
+    opacity: 0.4;
+    color:black;
 }

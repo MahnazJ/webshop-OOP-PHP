@@ -6,10 +6,10 @@ use App\Models\Model;
 use App\Libraries\MySql;
 use PDO;
 
-class ProductModel extends Model
+class ProductSaleModel extends Model
 {
     // Name of the table
-    protected $model = "products";
+    protected $model = "productsale";
 
     // Max number of records when fetching all records from table
     protected $limit;
