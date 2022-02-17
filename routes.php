@@ -42,4 +42,7 @@ $router->get('user/{id}/edit', 'App/Controllers/UserController.php@edit', 'admin
 $router->post('user/{id}/update', 'App/Controllers/UserController.php@update', 'admin.user.update', ['update' => Permissions::class]);
 $router->get('user/{id}/destroy', 'App/Controllers/UserController.php@destroy', 'admin.user.destroy', ['delete' => Permissions::class]);
 
-$router->get('products', 'App/Controllers/ProductController.php@index', 'products');
+$router->get('home/products', 'App/Controllers/ProductController.php@index', 'products');
+
+
+$router->get('contact', 'App/Controllers/ContactController.php@index', 'contact');

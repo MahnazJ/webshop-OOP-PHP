@@ -1,9 +1,22 @@
 <?php require 'views/partials/header.view.php' ?>
 <div class="container">
-Contact Us
+
+<h1>Contact Us</h1>
+
+<form method="GET" action="/names">
+
+<input name="name"></input>
+
+<button type="submit">Submit</button>
 
 
-</div>
+
+
+
+</form>
+
+
+
 <?php require 'views/partials/footer.view.php' ?>
 
-
+ 

@@ -37,6 +37,7 @@ class UserRequest
             'email'         => 'required|email',
             'city'          => 'string',
             'password'      => 'required'
+            
         ];
     }
 
