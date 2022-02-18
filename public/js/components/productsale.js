@@ -23,7 +23,7 @@ Vue.component('productsale', {
         // Get all products calling function in controller (Ajax call)
         axios({
             method: 'GET',
-            url: 'home/products',
+            url: 'home/productsale',
             headers: {
                 "X-Requested-With": "XMLHttpRequest"
             }
