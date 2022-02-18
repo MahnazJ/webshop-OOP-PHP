@@ -15,6 +15,8 @@ use App\Middleware\Permissions;
 $router->get('', 'App/Controllers/HomeController.php@index', 'root');
 $router->get('home', 'App/Controllers/HomeController.php@index', 'home');
 $router->get('home/products', 'App/Controllers/HomeController.php@products', 'home.products');
+$router->get('home/products/index', 'App/Controllers/ProductController.php@index', 'products');
+
 $router->get('home/productsale','App/Controllers/ProductSaleController.php@index','productsale');
 
 $router->get('login', 'App/Controllers/LoginController.php@index', 'login');
@@ -42,4 +44,3 @@ $router->get('user/{id}/edit', 'App/Controllers/UserController.php@edit', 'admin
 $router->post('user/{id}/update', 'App/Controllers/UserController.php@update', 'admin.user.update', ['update' => Permissions::class]);
 $router->get('user/{id}/destroy', 'App/Controllers/UserController.php@destroy', 'admin.user.destroy', ['delete' => Permissions::class]);
 
-$router->get('products', 'App/Controllers/ProductController.php@index', 'products');

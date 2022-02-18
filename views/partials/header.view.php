@@ -37,7 +37,7 @@
                                                 </a>
                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                 <li>
-                                                    <a class="dropdown-item button-style text-style" href="/home/products">Products</a></li>
+                                                    <a class="dropdown-item button-style text-style" href="/home/products/index">Products</a></li>
                                                 <li>
                                                     <a class="dropdown-item button-style text-style" href="/home/productsale">Sale</a></li>
                                                 <li>
