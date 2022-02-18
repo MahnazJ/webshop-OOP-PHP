@@ -2,11 +2,14 @@
 
 
     <div class="container">
-        <h1>Products</h1>
+        <h1 class="text-center mt-3 mb-2 buttonstyle">Current Products to edit or delete</h1>
         <ul>
     <?php foreach ($products as $product) : ?>
-        <li>Name:<?= $product->name ?></li>
-        <li>ID<?= $product->id ?></li>
+        <li class="text-center mt-3 mb-2 buttonstyle">Name:<?= $product->name ?>
+        <li class="text-center mt-3 mb-2 buttonstyle">ID<?= $product->id ?> 
+        <button><a href="/products/edit">Edit</a></button></li></li>
+
+
 
     <?php endforeach ?>
     

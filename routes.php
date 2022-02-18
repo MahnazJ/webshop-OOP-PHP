@@ -16,6 +16,9 @@ $router->get('', 'App/Controllers/HomeController.php@index', 'root');
 $router->get('home', 'App/Controllers/HomeController.php@index', 'home');
 $router->get('home/products', 'App/Controllers/HomeController.php@products', 'home.products');
 $router->get('home/products/index', 'App/Controllers/ProductController.php@index', 'products');
+$router->get('products/edit', 'App/Controllers/ProductController.php@edit', 'products.edit');
+
+
 
 $router->get('home/productsale','App/Controllers/ProductSaleController.php@index','productsale');
 
