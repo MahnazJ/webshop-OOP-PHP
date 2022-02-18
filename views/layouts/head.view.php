@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="/public/css/buttons.css"/>
     <link rel="stylesheet" href="/public/css/navbar.css"/>
     <link rel="stylesheet" href="/public/css/registerlogin.css"/>
+    <link rel="stylesheet" href="/public/css/contact.css" />
 
 
 </head>
@@ -40,4 +41,3 @@
     <main id="app" class="content">
         <div class="layer" @click="closeShoppingCart"></div>
         <div class="container-fluid p-0">
-            

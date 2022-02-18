@@ -1,7 +1,4 @@
 <?php
-
-
-
 namespace App\Controllers;
 
 use App\Libraries\MySql;
@@ -41,7 +38,7 @@ class ProductSaleController extends Controller
         echo json_encode([
             'success'   => $success,
             'message'   => $message,
-            'products'  => $products,
+            'products'  => $productsale,
         ]);
     }
 }
