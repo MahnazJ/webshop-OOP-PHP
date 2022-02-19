@@ -1,39 +1,27 @@
-function validateContactForm() {
-    var valid = true;
+$(document).ready(function() {
+    $('form[name="frmContact"]').on('submit', function(e) {
+        $('form[name="frmContact"] input[type="submit"]').prop('disabled', true)
 
-    $(".info").html("");
-    $(".input-field").css('border', '#e0dfdf 1px solid');
-    var userName = $("#userName").val();
-    var userEmail = $("#userEmail").val();
-    var subject = $("#subject").val();
-    var content = $("#content").val();
-    
-    if (userName == "") {
-        $("#userName-info").html("Required.");
-        $("#userName").css('border', '#e66262 1px solid');
-        valid = false;
-    }
-    if (userEmail == "") {
-        $("#userEmail-info").html("Required.");
-        $("#userEmail").css('border', '#e66262 1px solid');
-        valid = false;
-    }
-    if (!userEmail.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/))
-    {
-        $("#userEmail-info").html("Invalid Email Address.");
-        $("#userEmail").css('border', '#e66262 1px solid');
-        valid = false;
-    }
+        $.ajax({
+            url: 'contact',
+            method: 'POST',
+            data: $(this).serialize(),
+            success: function(result) {
+                console.log("mew");
+                console.log(result);
+                const data = JSON.parse(result)
+                
+                if (data.success) {
+                    $('form[name="frmContact"] input[type="submit"]').prop('disabled', false)
+                    window.location.href = "/";
+                } else {
+                    $('#register-message').html(data.message).show()
+                }
+            }
+        })
+    })
 
-    if (subject == "") {
-        $("#subject-info").html("Required.");
-        $("#subject").css('border', '#e66262 1px solid');
-        valid = false;
-    }
-    if (content == "") {
-        $("#userMessage-info").html("Required.");
-        $("#content").css('border', '#e66262 1px solid');
-        valid = false;
-    }
-    return valid;
-}
+    $('#register-cancel').on('click', function() {
+        window.location.href = "/"
+    })
+})

@@ -44,7 +44,7 @@
                    <textarea name="content" id="content" class="input-field" cols="60" rows="6"></textarea>
             </div>
 
-            <input class="btn text-style" type="Submit" name="submit" value="Submit">
+            <input class="btn text-style" type="submit" name="submit" value="Submit">
 
     </form>
 
