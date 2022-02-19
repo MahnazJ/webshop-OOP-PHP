@@ -12,18 +12,18 @@
 
             <div class="form-group mb-2">
                 <label for="email" class="form-label register-form text-style">Email</label>
-                <input type="email" class="form-control" name="email" id="email" placeholder="email" required />
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" required />
             </div>
 
             <div class="form-group mb-2">
                 <label for="password" class="form-label register-form text-style">Password</label>
-                <input type="password" class="form-control" name="password" id="password" placeholder="password" required />
+                <input type="password" class="form-control" name="password" id="password" placeholder="Password" required />
             </div>
 
             <div class="mb-3">
                 <div class="row">
                     <div class="col-md-6">
-                        <input type="submit" class="btn text-style" value="Login" />
+                        <input type="submit" class="btn text-style submit-button" value="Login" />
                     </div>
                     <div class="col-md-6">
                         <div id="login-message"></div>

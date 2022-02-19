@@ -28,7 +28,7 @@
                 <label for="subject" class="form-label register-form text-style">
                 <select class="form-select" name="subject" id="subject" placeholder="Subject" aria-label="Default select example">
                     <option selected>Choose a subject</option>
-                    <option value="1">Order</option>
+                    <option class="button-style text-style" value="1">Order</option>
                     <option value="2">Delivery and Returns</option>
                     <option value="3">Product information</option>
                     <option value="4">Sustainability</option>
@@ -44,7 +44,7 @@
                    <textarea name="content" id="content" class="input-field" cols="60" rows="6"></textarea>
             </div>
 
-            <input class="btn text-style" type="submit" name="submit" value="Submit">
+            <input class="btn text-style submit-button" type="submit" name="submit" value="Submit">
 
     </form>
 

@@ -33,7 +33,6 @@
     <link rel="stylesheet" href="/public/css/buttons.css"/>
     <link rel="stylesheet" href="/public/css/navbar.css"/>
     <link rel="stylesheet" href="/public/css/registerlogin.css"/>
-    <link rel="stylesheet" href="/public/css/contact.css" />
 
 
 </head>
