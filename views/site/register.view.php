@@ -7,29 +7,29 @@
 
             <form class="register-form" method="<?= $method ?>" onsubmit="return false;" name="frmRegister">
             
-            <div class="form-group mb-2">
-                <label for="first_name" class="form-label register-form text-style">First Name
-                <input type="text" name="first_name" class="form-control" id="first_name" maxlength="80" placeholder="First name" required> </label>
+            <div class="form-group">
+                <label for="first_name" class="form-label register-form text-style">First Name </label>
+                <input type="text" name="first_name" class="form-control" id="first_name" maxlength="80" placeholder="First name" required> 
             </div>
 
             <div class="form-group">
-                <label for="last_name" class="form-label register-form text-style"> Last Name
-                <input type="text" name="last_name" class="form-control" id="last_name" maxlength="80" placeholder="Last name" required></label>
+                <label for="last_name" class="form-label register-form text-style"> Last Name </label>
+                <input type="text" name="last_name" class="form-control" id="last_name" maxlength="80" placeholder="Last name" required>
             </div>
 
             <div class="form-group">
-                <label for="email" class="form-label register-form text-style">Email
-                <input type="email" name="email" class="form-control" id="email" maxlength="255" placeholder="Email" required></label>
+                <label for="email" class="form-label register-form text-style">Email </label>
+                <input type="email" name="email" class="form-control" id="email" maxlength="255" placeholder="Email" required>
             </div>
 
             <div class="form-group">
-                <label for="password" class="register-form text-style">Password
-                <input type="password" name="password" class="form-control" id="password" maxlength="50" placeholder="Password" required></label>
+                <label for="password" class="register-form text-style">Password </label>
+                <input type="password" name="password" class="form-control" id="password" maxlength="50" placeholder="Password" required>
             </div>
 
             <div>       
-            <label for="password_2" class="register-form text-style">Repeat Password
-                <input type="password" class="form-control" name="password_2" id="password_2" maxlength="50" placeholder="Repeat password"required></label>
+            <label for="password_2" class="register-form text-style">Repeat Password </label>
+                <input type="password" class="form-control" name="password_2" id="password_2" maxlength="50" placeholder="Repeat password"required>
             </div>
 
                 <input type="hidden" name="f_token" value="<?= createToken() ?>">
