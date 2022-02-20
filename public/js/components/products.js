@@ -43,7 +43,7 @@ Vue.component('products', {
                         <h5 class="card-title text-style">{{ product.name }}</h5>
                         <p  class="text-style>"Stock: {{ product.stock }}</p>
                         <p class="price text-style"> &euro; {{ product.price }}</p>
-                        <input type="button" class="btn text-style" :disabled="product.stock === 0" @click="addToCart(product)" value="Add to cart">
+                        <input type="button" class="btn text-style submit-button" :disabled="product.stock === 0" @click="addToCart(product)" value="Add to cart">
                     </div>
                 </div>
             </div>
